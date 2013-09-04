@@ -1,0 +1,9 @@
+"Crazy Rusher Game" consists of a matrix, dungeon maze, known as
+"The maze", which is being unhabited by swarm of evil creatures,
+known as "The evil creatures". It is generally accepted, that 
+peace and happiness always reign over the forces of evil, so our
+main character "Smiley" is being teleported to the dungeon, to
+destroy the swarm, before they turn the maze into an infectious 
+hive, and populate the world with bloodthirsty dummies. 
+
+                                     - Good luck, Smiley!
