@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 class Enemy
 {
@@ -32,46 +29,47 @@ class Enemy
         for (int i = 0; i < enemyCoords.Count; i++)
         {
             int direction = generator.Next(1, 5); // 1 - left; 2 - right; 3 - up; 4 - down;
-            int row = enemyCoords[i][0];
-            int col = enemyCoords[i][1];
+            enemyRow = enemyCoords[i][0];
+            enemyCol = enemyCoords[i][1];
             listiIndex = i;
             if (direction == 1)
             {
-                if (matrix[row, col - 1] != GameField.wallChar && col - 1 >= 1)
+                if (matrix[enemyRow, enemyCol - 1] != GameField.wallChar && enemyCol - 1 >= 1)
                 {
-                    matrix[row, col] = ' ';
-                    matrix[row, col - 1] = enemyChar;
-                    enemyCoords[i][1] = col - 1;
+                   matrix[enemyRow, enemyCol] = ' ';
+                   matrix[enemyRow, enemyCol - 1] = enemyChar;
+                   enemyCoords[i][1] = enemyCol - 1;
                 }
             }
             else if (direction == 2)
             {
-                if (matrix[row, col + 1] != GameField.wallChar && col + 1 < matrix.Cols - 1)
+                if (matrix[enemyRow, enemyCol + 1] != GameField.wallChar && enemyCol + 1 < matrix.Cols - 1)
                 {
-                    matrix[row, col] = ' ';
-                    matrix[row, col + 1] = enemyChar;
-                    enemyCoords[i][1] = col + 1;
+                   matrix[enemyRow, enemyCol] = ' ';
+                   matrix[enemyRow, enemyCol + 1] = enemyChar;
+                   enemyCoords[i][1] = enemyCol + 1;
                 }
             }
             else if (direction == 3)
             {
-                if (matrix[row - 1, col] != GameField.wallChar && row - 1 >= 1)
+                if (matrix[enemyRow - 1, enemyCol] != GameField.wallChar && enemyRow - 1 >= 1)
                 {
-                    matrix[row, col] = ' ';
-                    matrix[row - 1, col] = enemyChar;
-                    enemyCoords[i][0] = row - 1;
+                   matrix[enemyRow, enemyCol] = ' ';
+                   matrix[enemyRow - 1, enemyCol] = enemyChar;
+                   enemyCoords[i][0] = enemyRow - 1;
                 }
             }
             else if (direction == 4)
             {
-                if (row + 1 < matrix.Rows - 1 && matrix[row + 1, col] != GameField.wallChar)
+                if (enemyRow + 1 < matrix.Rows - 1 && matrix[enemyRow + 1, enemyCol] != GameField.wallChar)
                 {
-                    matrix[row, col] = ' ';
-                    matrix[row + 1, col] = enemyChar;
-                    enemyCoords[i][0] = row + 1;
+                    matrix[enemyRow, enemyCol] = ' ';
+                    matrix[enemyRow + 1, enemyCol] = enemyChar;
+                    enemyCoords[i][0] = enemyRow + 1;
                 }
             }
-         }  
+
+        }  
     }
 
 }

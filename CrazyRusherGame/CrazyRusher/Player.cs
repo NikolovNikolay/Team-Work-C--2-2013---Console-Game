@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 class Player
 {
@@ -96,6 +91,7 @@ class Player
             matrix[row, col - 1] = ' ';
             matrix[row, col + 1] = ' ';
         }
+        Collisions.EatenByEnemy(matrix, Enemy.enemyCoords, CrazyRusher.saveStartTime);
 
         if (Console.KeyAvailable)
         {
@@ -178,6 +174,8 @@ class Player
             // configure shooting
             else if (pressedKey.Key == ConsoleKey.Spacebar)
             {
+                Collisions.EnemyShot(matrix, Enemy.enemyCoords, CrazyRusher.saveStartTime);
+
                 if (row - 2 >= 0 && row + 2 < matrix.Rows)
                 {
                     if (matrix[row - 1, col] != '#')

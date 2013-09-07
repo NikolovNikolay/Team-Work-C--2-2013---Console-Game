@@ -1,19 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-
 
 class CrazyRusher
 {
-    
+    public static DateTime saveStartTime;
     static void Main()
     {
         Console.CursorVisible = false;
         GameField matrix = new GameField();
-        DateTime saveStartTime = DateTime.Now;
+        saveStartTime = DateTime.Now;
 
         GameID.PrintGameName();
         GameField.DrawBorderLines();
@@ -26,8 +20,13 @@ class CrazyRusher
         {
             DrawInitialGameField(matrix);
             Player.MovePlayer(matrix);
+
             Enemy.MoveEnemies(matrix);
-            
+            //Collisions.EatenByEnemy(matrix, Enemy.enemyCoords, CrazyRusher.saveStartTime);
+            if (GameScores.gameOver == true)
+            {
+                break;
+            }
         }
     }
 
@@ -37,7 +36,6 @@ class CrazyRusher
         GameField.SetMatrixContent(matrix);
         GameField.PlayerCoordinates(matrix);
         GameField.PrintMatrix(matrix);
-        
     }
 
 

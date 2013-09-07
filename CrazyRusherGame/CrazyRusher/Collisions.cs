@@ -1,36 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 class Collisions
 {
-    public static void EnemyShot(GameField matrix, List<List<int>> enemyCoords, int i)
+    public static void EnemyShot(GameField matrix, List<List<int>> enemyCoords, DateTime saveStartTime)
     {
-        if ((Player.row - 1 == '|' && Enemy.enemyRow == Player.row - 1 && Enemy.enemyCol == Player.col)) //|| 
-            //(Player.row - 2 == '|' && Enemy.enemyRow == Player.row - 2 && Enemy.enemyCol == Player.col))
+        bool shot;
+        int row = 0;
+        int col = 0;
+        for (int i = 0; i < enemyCoords.Count; i++)
         {
-            matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
-            enemyCoords.RemoveAt(i);
+            row = enemyCoords[i][0];
+            col = enemyCoords[i][1];
+
+
+            if ((row == Player.row - 1 && col == Player.col) ||
+             (row == Player.row - 2 && col == Player.col))
+            {
+               
+                matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
+                enemyCoords.RemoveAt(i);
+                shot = true;
+                GameScores.CollisionScores(shot, saveStartTime);
+
+            }
+            else if ((row == Player.row + 1 && col == Player.col) ||
+                (row == Player.row + 2 && col == Player.col))
+            {
+                matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
+                enemyCoords.RemoveAt(i);
+                shot = true;
+                GameScores.CollisionScores(shot, saveStartTime); 
+            }
+            else if ((col == Player.col + 1 && row == Player.row) ||
+                (Enemy.enemyCol == Player.col + 2 && Enemy.enemyCol == Player.col))
+            {
+                matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
+                enemyCoords.RemoveAt(i);
+                shot = true;
+                GameScores.CollisionScores(shot, saveStartTime);
+            }
+            else if ((col == Player.col - 1 && row == Player.row) ||
+                (col == Player.col - 2 && row == Player.row))
+            {
+                matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
+                enemyCoords.RemoveAt(i);
+                shot = true;
+                GameScores.CollisionScores(shot, saveStartTime);
+            }
         }
-        else if ((Player.row + 1 == '|' && Enemy.enemyRow == Player.row + 1 && Enemy.enemyCol == Player.col) ||
-            (Player.row + 2 == '|' && Enemy.enemyRow == Player.row + 2 && Enemy.enemyCol == Player.col))
+    }
+
+    public static void EatenByEnemy(GameField matrix, List<List<int>> enemyCoords, DateTime saveStartTime)
+    {
+        int row = 0;
+        int col = 0;
+        for (int i = 0; i < enemyCoords.Count; i++)
         {
-            matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
-            enemyCoords.RemoveAt(i);
-        }
-        else if ((Player.col + 1 == '-' && Enemy.enemyCol == Player.col + 1 && Enemy.enemyRow == Player.row) ||
-            (Player.col + 2 == '-' && Enemy.enemyCol == Player.col + 2 && Enemy.enemyCol == Player.col))
-        {
-            matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
-            enemyCoords.RemoveAt(i);
-        }
-        else if ((Player.col - 1 == '-' && Enemy.enemyCol == Player.col - 1 && Enemy.enemyRow == Player.row) ||
-            (Player.col - 2 == '-' && Enemy.enemyCol == Player.col - 2 && Enemy.enemyCol == Player.col))
-        {
-            matrix[Enemy.enemyRow, Enemy.enemyCol] = ' ';
-            enemyCoords.RemoveAt(i);
+            row = enemyCoords[i][0];
+            col = enemyCoords[i][0];
+            bool eaten = true;
+            if (((Player.row + 1 == row) && (Player.col == col)) || 
+               ((Player.row == row) && (Player.col + 1 == col)) ||
+               ((Player.row - 1 == row) && (Player.col == col)) ||
+               ((Player.row == row) && (Player.col - 1 == col)))
+            {
+                eaten = false;
+                enemyCoords.RemoveAt(i);
+                matrix[row, col] = ' ';
+                GameScores.CollisionScores(eaten, saveStartTime);
+                //GameScores.CollisionScores(false, saveStartTime);
+            } 
         }
     }
 }
