@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WarehouseSystem.AutoPartObject" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AutoPartObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.ConstructionObject" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAIAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ConstructionObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.DesktopStore" Collapsed="true">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIAAAAAAAAAAAAAAAAAAAAAAACAAAAAAACAAA=</HashCode>
+      <FileName>DesktopStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WarehouseSystem.ElectronicObject" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAQACAAEAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>ElectronicObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.GardenObject" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAIAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>GardenObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.MachineryObject" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAIAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>MachineryObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.MainWindow" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAAgAAAAAAAAAAAAAAAAAAAAAEAAAAAAQAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WarehouseSystem.Renderer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQCAAQAABAAEAAAAAAAQAAAAAAAABCIABAAAAADAAA=</HashCode>
+      <FileName>Renderer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WarehouseSystem.SanitaryObject" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <FileName>SanitaryObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.SelectCategoryException" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>SelectCategoryException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WarehouseSystem.Store" Collapsed="true">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAIAAAQAAAAQAAAFACAAAAAAAAAAA=</HashCode>
+      <FileName>Store.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WarehouseSystem.StoreObject" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAgAAgEAAAAAAAAAAAAAAAAAAgAgAAACAA=</HashCode>
+      <FileName>StoreObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WarehouseSystem.ToolObject" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ToolObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="WarehouseSystem.Dimensions" Collapsed="true">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQEQAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dimensions.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="WarehouseSystem.IColorable" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>IColorable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WarehouseSystem.IDigital" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDigital.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WarehouseSystem.IMaterial" Collapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WarehouseSystem.IMeasureable" Collapsed="true">
+    <Position X="13.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMeasureable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WarehouseSystem.IRenderer" Collapsed="true">
+    <Position X="15.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WarehouseSystem.IStoreObject" Collapsed="true">
+    <Position X="17.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAgAAgAAAAAAAAAAAAAAAAAAAgAgAAACAA=</HashCode>
+      <FileName>IStoreObjects.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WarehouseSystem.IVehicle" Collapsed="true">
+    <Position X="13.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IVehicle.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="WarehouseSystem.Branch" Collapsed="true">
+    <Position X="13.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAABAAAAAAAAAAAAAAQAACAAQAAAACAAACA=</HashCode>
+      <FileName>Branch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WarehouseSystem.BranchToClassName" Collapsed="true">
+    <Position X="15.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQAAAAAAAAIAhAEAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Branch.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WarehouseSystem.Color" Collapsed="true">
+    <Position X="17.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAABAAAAAIAAAAAAAAAAABAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Color.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WarehouseSystem.Material" Collapsed="true">
+    <Position X="13.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAACAAAAEAAIAAQAAAA=</HashCode>
+      <FileName>Material.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
