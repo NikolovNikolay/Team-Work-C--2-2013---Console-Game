@@ -1,8 +1,5 @@
 E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\bin\Debug\WarehouseSystem.exe.config
 E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem.csprojResolveAssemblyReference.cache
-E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\MainWindow.baml
-E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\MainWindow.g.cs
-E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\App.g.cs
 E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem_MarkupCompile.cache
 E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem.g.resources
 E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem.Properties.Resources.resources
@@ -50,3 +47,6 @@ C:\Users\Lucho\Documents\TelerikAcademy\OOP\OOPTeamwork\trunk\BloodStoneProject\
 C:\Users\Lucho\Documents\TelerikAcademy\OOP\OOPTeamwork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem.g.resources
 C:\Users\Lucho\Documents\TelerikAcademy\OOP\OOPTeamwork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem.Properties.Resources.resources
 C:\Users\Lucho\Documents\TelerikAcademy\OOP\OOPTeamwork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\WarehouseSystem.csproj.GenerateResource.Cache
+E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\MainWindow.baml
+E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\MainWindow.g.cs
+E:\Dropbox\Telerik Projects\OOPTeamWork\trunk\BloodStoneProject\WarehouseSystem\obj\Debug\App.g.cs

@@ -7,6 +7,8 @@ namespace WarehouseSystem
     using System.Windows.Forms;
     using System.Windows.Input;
     using System.Windows.Interop;
+    using WarehouseSystem.Store;
+    using WarehouseSystem.Engine;
 
     public partial class MainWindow : Window
     {
@@ -15,8 +17,8 @@ namespace WarehouseSystem
         public MainWindow()
         {
             InitializeComponent();
-            Renderer renderer = new Renderer(this);
-            renderer.Render();
+            ProgramEngine renderer = new ProgramEngine(this);
+            renderer.Run();
             //this.testasd.MouseLeftButtonDown += new MouseButtonEventHandler(move_window);
         }
 
